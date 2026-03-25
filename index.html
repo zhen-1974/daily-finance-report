@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全球金融市场每日投资分析报告 | 2026年3月24日</title>
 <meta property="og:title" content="全球金融市场每日投资分析报告 2026.3.24">
-<meta property="og:description" content="黑色星期一后深V反弹：特朗普释放美伊谈判信号，A股超4500股上涨，金价连续10日下跌">
+<meta property="og:description" content="黑色星期一后强势修复：沪指涨1.78%，超5100股上涨，北向资金连续5日净流入合计超1518亿，金价连续10日下跌">
 <meta property="og:type" content="article">
 <style>
   :root {
@@ -23,7 +23,6 @@
     --orange-bg: #fff7ed;
     --border: #e5e7eb;
     --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-    --shadow-lg: 0 4px 12px rgba(0,0,0,0.08);
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -34,10 +33,8 @@
     font-size: 15px;
   }
   .container { max-width: 860px; margin: 0 auto; padding: 16px; }
-
-  /* Header */
   .header {
-    background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #065f46 0%, #16a34a 100%);
     color: #fff;
     border-radius: 16px;
     padding: 32px 24px;
@@ -55,28 +52,11 @@
   }
   .header .date { font-size: 13px; opacity: 0.8; margin-bottom: 8px; }
   .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
-  .header .subtitle { font-size: 14px; opacity: 0.85; line-height: 1.6; }
-
-  /* Alert Banner */
-  .alert {
-    padding: 14px 18px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-  .alert-red {
-    background: var(--red-bg);
-    border-left: 4px solid var(--red);
-    color: #991b1b;
-  }
-  .alert-orange {
-    background: var(--orange-bg);
-    border-left: 4px solid var(--orange);
-    color: #9a3412;
-  }
-
-  /* Section */
+  .header .subtitle { font-size: 14px; opacity: 0.9; line-height: 1.6; }
+  .alert { padding: 14px 18px; border-radius: 12px; margin-bottom: 20px; font-size: 14px; line-height: 1.7; }
+  .alert-green { background: var(--green-bg); border-left: 4px solid var(--green); color: #166534; }
+  .alert-orange { background: var(--orange-bg); border-left: 4px solid var(--orange); color: #9a3412; }
+  .alert-red { background: var(--red-bg); border-left: 4px solid var(--red); color: #991b1b; }
   .section {
     background: var(--card);
     border-radius: 14px;
@@ -86,117 +66,47 @@
     border: 1px solid var(--border);
   }
   .section h2 {
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 14px;
-    padding-bottom: 10px;
+    font-size: 17px; font-weight: 700; color: var(--accent);
+    margin-bottom: 14px; padding-bottom: 10px;
     border-bottom: 2px solid var(--accent-light);
   }
-  .section h3 {
-    font-size: 15px;
-    font-weight: 600;
-    margin: 14px 0 8px;
-    color: var(--text);
-  }
-
-  /* Data Table */
+  .section h3 { font-size: 15px; font-weight: 600; margin: 14px 0 8px; color: var(--text); }
   .table-wrap { overflow-x: auto; margin: 10px 0; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-    white-space: nowrap;
-  }
-  th {
-    background: #f1f5f9;
-    padding: 8px 10px;
-    text-align: left;
-    font-weight: 600;
-    color: var(--text-secondary);
-    border-bottom: 2px solid var(--border);
-  }
-  td {
-    padding: 7px 10px;
-    border-bottom: 1px solid #f3f4f6;
-  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; white-space: nowrap; }
+  th { background: #f1f5f9; padding: 8px 10px; text-align: left; font-weight: 600; color: var(--text-secondary); border-bottom: 2px solid var(--border); }
+  td { padding: 7px 10px; border-bottom: 1px solid #f3f4f6; }
   tr:hover { background: #f8fafc; }
   .red { color: var(--red); font-weight: 600; }
   .green { color: var(--green); font-weight: 600; }
   .bold { font-weight: 700; }
-
-  /* Note/Quote */
   .note {
-    background: #f0f9ff;
-    border-left: 3px solid var(--accent);
-    padding: 12px 14px;
-    margin: 12px 0;
-    border-radius: 0 8px 8px 0;
-    font-size: 13.5px;
-    line-height: 1.75;
-    color: #1e3a5f;
+    background: #f0f9ff; border-left: 3px solid var(--accent);
+    padding: 12px 14px; margin: 12px 0; border-radius: 0 8px 8px 0;
+    font-size: 13.5px; line-height: 1.75; color: #1e3a5f;
   }
-
-  /* Tags */
-  .tag {
-    display: inline-block;
-    padding: 2px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-right: 4px;
-  }
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-right: 4px; }
   .tag-red { background: var(--red-bg); color: var(--red); }
   .tag-green { background: var(--green-bg); color: var(--green); }
   .tag-orange { background: var(--orange-bg); color: var(--orange); }
-
-  /* Grid for key metrics */
   .metrics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    margin: 12px 0;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px; margin: 12px 0;
   }
   .metric-card {
-    background: #f8fafc;
-    border-radius: 10px;
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #e5e7eb;
+    background: #f8fafc; border-radius: 10px; padding: 12px;
+    text-align: center; border: 1px solid #e5e7eb;
   }
   .metric-card .label { font-size: 11px; color: var(--text-secondary); margin-bottom: 4px; }
   .metric-card .value { font-size: 18px; font-weight: 700; }
   .metric-card .change { font-size: 12px; margin-top: 2px; }
-
-  /* Allocation */
-  .alloc-row {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    font-size: 13px;
-  }
+  .alloc-row { display: flex; align-items: center; margin: 8px 0; font-size: 13px; }
   .alloc-bar {
-    height: 20px;
-    border-radius: 4px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 600;
-    min-width: 60px;
+    height: 20px; border-radius: 4px; margin-right: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 11px; font-weight: 600; min-width: 60px;
   }
-
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 12px;
-    color: var(--text-secondary);
-  }
-
-  /* Responsive */
+  .footer { text-align: center; padding: 20px 0; font-size: 12px; color: var(--text-secondary); }
   @media (max-width: 600px) {
     .container { padding: 10px; }
     .header { padding: 24px 16px; }
@@ -211,54 +121,51 @@
 <body>
 <div class="container">
 
-  <!-- Header -->
   <div class="header">
-    <div class="date">2026年3月24日（周二）| 盘中更新 14:30</div>
+    <div class="date">2026年3月24日（周二）| 收盘更新</div>
     <h1>全球金融市场每日投资分析报告</h1>
     <div class="subtitle">
-      黑色星期一后深V反弹：特朗普释放美伊谈判信号，A股超4500股上涨<br>
-      北向资金逆市净流入352亿 | 金价连续第10日下跌 | 油价暴跌超10%
+      黑色星期一后强势修复：沪指涨1.78%，超5,100股上涨，百股涨停<br>
+      北向资金连续5日净流入合计超1,518亿 | 金价连续第10日下跌创43年最差周表现
     </div>
   </div>
 
-  <!-- Alert -->
-  <div class="alert alert-orange">
-    <strong>核心事件：</strong>特朗普称美伊已举行"富有成效的对话"，下令推迟打击伊朗发电厂五天。美股大涨，油价暴跌10%+。但伊朗官方否认举行任何直接谈判，市场处于将信将疑状态，亚太股市高开后快速回落。
+  <div class="alert alert-green">
+    <strong>核心结论：</strong>A股迎来黑色星期一后的强势修复，三大指数全线收涨。缩量普涨格局（成交2.09万亿，较前日缩量3,487亿），电力、军工、环保板块领涨。亚太市场全线反弹（恒指+2.79%，日经+1.43%），但美股未能延续涨势（标普-0.37%）。美伊局势仍是市场最大变量。
   </div>
 
-  <!-- Key Metrics -->
   <div class="section">
     <h2>核心指标速览</h2>
     <div class="metrics">
       <div class="metric-card">
-        <div class="label">上证指数（3.23收盘）</div>
-        <div class="value red">3,813</div>
-        <div class="change red">-3.63%</div>
+        <div class="label">上证指数（收盘）</div>
+        <div class="value green">3,881</div>
+        <div class="change green">+1.78%</div>
       </div>
       <div class="metric-card">
-        <div class="label">道琼斯（3.23收盘）</div>
-        <div class="value green">46,208</div>
-        <div class="change green">+1.38%</div>
+        <div class="label">深证成指（收盘）</div>
+        <div class="value green">13,537</div>
+        <div class="change green">+1.43%</div>
       </div>
       <div class="metric-card">
-        <div class="label">北向资金（3.23）</div>
-        <div class="value green">352亿</div>
-        <div class="change green">净流入</div>
+        <div class="label">北向资金（5日合计）</div>
+        <div class="value green">1,518亿</div>
+        <div class="change green">连续净流入</div>
       </div>
       <div class="metric-card">
-        <div class="label">国际金价（盘中）</div>
-        <div class="value red">$4,362</div>
+        <div class="label">国际金价</div>
+        <div class="value red">~$4,404</div>
         <div class="change red">连续10日下跌</div>
       </div>
       <div class="metric-card">
-        <div class="label">WTI原油（3.23收盘）</div>
-        <div class="value red">$88.13</div>
-        <div class="change red">-10.28%</div>
+        <div class="label">恒生指数</div>
+        <div class="value green">25,064</div>
+        <div class="change green">+2.79%</div>
       </div>
       <div class="metric-card">
         <div class="label">10年国债收益率</div>
-        <div class="value">1.76%</div>
-        <div class="change green">-0.7BP</div>
+        <div class="value">1.83%</div>
+        <div class="change" style="color:#ea580c">+0.6BP</div>
       </div>
     </div>
   </div>
@@ -267,39 +174,45 @@
   <div class="section">
     <h2>一、A股市场</h2>
 
-    <h3>主要指数（3月23日收盘）</h3>
+    <h3>主要指数（3月24日收盘）</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th><th>成交额（亿）</th></tr></thead>
+        <thead><tr><th>指数</th><th>收盘点位</th><th>日涨跌</th><th>成交额（亿）</th><th>较3.23变化</th></tr></thead>
         <tbody>
-          <tr><td class="bold">上证指数</td><td>3,813.28</td><td class="red">-3.63%</td><td>10,862</td></tr>
-          <tr><td class="bold">深证成指</td><td>13,345.51</td><td class="red">-3.76%</td><td>13,453</td></tr>
-          <tr><td>创业板指</td><td>3,235.22</td><td class="red">-3.49%</td><td>6,124</td></tr>
-          <tr><td>沪深300</td><td>4,417.99</td><td class="red">-3.26%</td><td>6,717</td></tr>
-          <tr><td>上证50</td><td>2,792.33</td><td class="red">-3.17%</td><td>1,740</td></tr>
-          <tr><td>中证1000</td><td>7,409.11</td><td class="red">-4.81%</td><td>5,059</td></tr>
-          <tr><td>科创50</td><td>1,261.44</td><td class="red">-4.31%</td><td>737</td></tr>
+          <tr><td class="bold">上证指数</td><td>3,881.28</td><td class="green">+1.78%</td><td>9,314</td><td class="red">-1,548</td></tr>
+          <tr><td class="bold">深证成指</td><td>13,536.56</td><td class="green">+1.43%</td><td>11,514</td><td class="red">-1,939</td></tr>
+          <tr><td>创业板指</td><td>3,251.55</td><td class="green">+0.50%</td><td>5,154</td><td class="red">-970</td></tr>
+          <tr><td>沪深300</td><td>4,474.72</td><td class="green">+1.28%</td><td>5,301</td><td class="red">-1,416</td></tr>
+          <tr><td>上证50</td><td>2,830.85</td><td class="green">+1.38%</td><td>1,357</td><td class="red">-383</td></tr>
+          <tr><td>中证1000</td><td>7,600.86</td><td class="green">+2.59%</td><td>4,324</td><td class="red">-735</td></tr>
+          <tr><td>科创50</td><td>1,290.79</td><td class="green">+2.33%</td><td>673</td><td class="red">-64</td></tr>
         </tbody>
       </table>
     </div>
     <div class="note">
-      3月23日全市场超5,100只个股下跌，仅197只上涨。中证1000和科创50跌幅最惨烈（-4.81%和-4.31%），中小盘和科技成长股遭遇系统性抛售。本周累计：上证跌6.11%，深成指跌5.90%。
+      <strong>A股迎来强势修复！</strong>三大指数全线收涨，超5,100只个股上涨，百股涨停。中证1000（+2.59%）和科创50（+2.33%）反弹力度最大。沪深京三市合计成交约20,960亿元，较前一日缩量3,487亿元，呈现"缩量普涨"格局。
     </div>
 
-    <h3>今日（3月24日）盘中走势</h3>
+    <h3>本周走势</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>时间</th><th>沪指</th><th>深成指</th><th>创指</th><th>科创50</th></tr></thead>
+        <thead><tr><th>日期</th><th>上证指数</th><th>涨跌幅</th><th>深证成指</th><th>涨跌幅</th><th>创业板指</th><th>涨跌幅</th></tr></thead>
         <tbody>
-          <tr><td>开盘</td><td class="green">3,849.63 (+0.95%)</td><td class="green">13,514.67 (+1.27%)</td><td class="green">3,266.93 (+0.98%)</td><td>—</td></tr>
-          <tr><td>午间收盘</td><td class="green">3,849.34 (+0.95%)</td><td class="green">13,380.05 (+0.26%)</td><td class="red">3,209.76 (-0.79%)</td><td class="green">1,277.19 (+1.25%)</td></tr>
+          <tr><td>3月18日（三）</td><td>4,062.98</td><td class="green">+0.32%</td><td>14,187.80</td><td class="green">+1.05%</td><td>3,346.37</td><td class="green">+2.02%</td></tr>
+          <tr><td>3月19日（四）</td><td>4,006.55</td><td class="red">-1.39%</td><td>13,901.57</td><td class="red">-2.02%</td><td>3,309.10</td><td class="red">-1.11%</td></tr>
+          <tr><td>3月20日（五）</td><td>3,957.05</td><td class="red">-1.24%</td><td>13,866.20</td><td class="red">-0.25%</td><td>3,352.10</td><td class="green">+1.30%</td></tr>
+          <tr><td>3月23日（一）</td><td>3,813.28</td><td class="red bold">-3.63%</td><td>13,345.51</td><td class="red bold">-3.76%</td><td>3,235.22</td><td class="red bold">-3.49%</td></tr>
+          <tr><td>3月24日（二）</td><td>3,881.28</td><td class="green bold">+1.78%</td><td>13,536.56</td><td class="green bold">+1.43%</td><td>3,251.55</td><td class="green">+0.50%</td></tr>
         </tbody>
       </table>
     </div>
+
+    <h3>今日盘面特征</h3>
     <div class="note">
-      <strong>深V反弹！</strong>三大股指高开后一度集体翻绿（创指跌超2.4%），随后探底回升。全市场超4,500只个股上涨，58只涨停，半日成交1.32万亿元（缩量1,432亿）。<br>
-      <strong>热点：</strong>绿电概念（华电辽能7连板）、军工板块（多股涨停）、算力芯片（沐曦股份+16%）、航运港口<br>
-      <strong>回调：</strong>油气、煤炭板块
+      <strong>深V反弹 + 缩量普涨：</strong>高开后一度集体翻绿（创指跌超2.4%），随后探底回升，尾盘再度走强。<br>
+      <strong>领涨板块：</strong>电力（华电辽能7连板）、军工（长城军工涨停）、环保设备、航运港口、算力芯片<br>
+      <strong>回调板块：</strong>油气开采及服务逆市下跌，光伏加工设备调整<br>
+      <strong>成交变化：</strong>缩量3,487亿，资金观望情绪较浓
     </div>
   </div>
 
@@ -307,50 +220,36 @@
   <div class="section">
     <h2>二、国际市场</h2>
 
-    <h3>美股（3月23日收盘）</h3>
+    <h3>美股（最新收盘）</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th></tr></thead>
+        <thead><tr><th>指数</th><th>3.23收盘</th><th>3.23涨跌幅</th><th>3.24收盘</th><th>3.24涨跌幅</th></tr></thead>
         <tbody>
-          <tr><td>道琼斯工业</td><td>46,208.47</td><td class="green">+1.38%</td></tr>
-          <tr><td>标普500</td><td>6,581.00</td><td class="green">+1.15%</td></tr>
-          <tr><td>纳斯达克</td><td>21,946.76</td><td class="green">+1.38%</td></tr>
-          <tr><td>罗素2000</td><td>2,494.23</td><td class="green">+2.29%</td></tr>
+          <tr><td>道琼斯工业</td><td>46,208.47</td><td class="green">+1.38%</td><td>46,124.06</td><td class="red">-0.18%</td></tr>
+          <tr><td>标普500</td><td>6,581.00</td><td class="green">+1.15%</td><td>6,556.37</td><td class="red">-0.37%</td></tr>
+          <tr><td>纳斯达克</td><td>21,946.76</td><td class="green">+1.38%</td><td>—</td><td>—</td></tr>
+          <tr><td>罗素2000</td><td>2,494.23</td><td class="green">+2.29%</td><td>2,505.44</td><td class="green">+0.45%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>亚太市场（3月24日收盘）</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td class="bold">恒生指数</td><td>25,063.71</td><td class="green bold">+2.79%</td><td>科技股回暖</td></tr>
+          <tr><td>恒生科技</td><td>4,830.89</td><td class="green">+2.51%</td><td>—</td></tr>
+          <tr><td>韩国KOSPI</td><td>5,553.92</td><td class="green">+2.74%</td><td>高开4.29%后回落</td></tr>
+          <tr><td>日经225</td><td>52,252.28</td><td class="green">+1.43%</td><td>高开后回落</td></tr>
+          <tr><td>印度SENSEX</td><td>74,068.44</td><td class="green">+1.89%</td><td>逆市大涨</td></tr>
+          <tr><td>台湾加权</td><td>32,612.24</td><td class="red">-0.34%</td><td>逆市微跌</td></tr>
+          <tr><td>英国富时100</td><td>9,965.16</td><td class="green">+0.72%</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
     <div class="note">
-      美股三大指数录得2月6日以来最大单日涨幅。但从盘中最高点大幅回落——道指盘中一度涨超1,200点，收盘仅涨631点，显示市场对伊朗否认谈判消息保持高度警惕。
-    </div>
-
-    <h3>亚太市场（3月23日收盘 / 3月24日开盘）</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>指数</th><th>3.23收盘</th><th>涨跌幅</th><th>3.24开盘</th><th>盘中最新</th></tr></thead>
-        <tbody>
-          <tr><td>恒生指数</td><td>24,382.47</td><td class="red">-3.54%</td><td>—</td><td>—</td></tr>
-          <tr><td>恒生科技</td><td>4,712.48</td><td class="red">-3.28%</td><td>—</td><td>—</td></tr>
-          <tr><td>日经225</td><td>51,515.49</td><td class="red">-3.48%</td><td class="green">+1.67%</td><td>涨幅收窄至0.57%</td></tr>
-          <tr><td>韩国KOSPI</td><td>5,405.75</td><td class="red bold">-6.49%</td><td class="green">+4.29%</td><td>涨幅收窄至0.52%</td></tr>
-          <tr><td>台湾加权</td><td>32,722.50</td><td class="red">-2.45%</td><td>—</td><td>—</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="note">
-      韩国KOSPI前日暴跌6.49%为亚太最惨。今日亚太市场集体高开后快速跳水，日经一度涨超1,000点后大幅回落，韩国高开4.29%后收窄至0.52%。投资者对美伊消息真伪保持警惕。
-    </div>
-
-    <h3>欧洲市场（3月23日收盘）</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th></tr></thead>
-        <tbody>
-          <tr><td>德国DAX</td><td>22,653.86</td><td class="green">+1.22%</td></tr>
-          <tr><td>法国CAC40</td><td>7,726.20</td><td class="green">+0.79%</td></tr>
-          <tr><td>欧洲STOXX50</td><td>5,574.32</td><td class="green">+1.33%</td></tr>
-          <tr><td>英国富时100</td><td>9,894.15</td><td class="red">-0.24%</td></tr>
-        </tbody>
-      </table>
+      亚太市场全线反弹，但普遍"高开低走"。恒指表现突出（+2.79%），港股科技股回暖。美股3.24小幅回落，反弹未能延续，显示市场对伊朗否认谈判保持警惕。
     </div>
   </div>
 
@@ -361,18 +260,18 @@
     <h3>贵金属</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>品种</th><th>3.23收盘</th><th>3.24盘中</th><th>变动</th></tr></thead>
+        <thead><tr><th>品种</th><th>3.23收盘</th><th>3.24收盘</th><th>涨跌幅</th></tr></thead>
         <tbody>
-          <tr><td>国际黄金</td><td>~$4,407/oz</td><td>$4,362/oz</td><td class="red">-1.76%（连跌10日）</td></tr>
-          <tr><td>国内基础金价</td><td>919.83元/克</td><td>980.02元/克</td><td class="green">+6.54%</td></tr>
-          <tr><td>沪金主连</td><td>940.00元/克</td><td>968.80元/克</td><td class="green">+3.06%</td></tr>
-          <tr><td>黄金T+D</td><td>920.99元/克</td><td>968.70元/克</td><td class="green">+5.18%</td></tr>
-          <tr><td>上海银Ag(T+D)</td><td>15.269元/克</td><td>—</td><td class="red">前日-14.12%</td></tr>
+          <tr><td>国际黄金</td><td>~$4,407/oz</td><td>~$4,404/oz</td><td class="red">-0.08%（连跌10日）</td></tr>
+          <tr><td>国内Au99.99</td><td>919.83元/克</td><td>979.69元/克</td><td class="green">+6.51%</td></tr>
+          <tr><td>沪金主连</td><td>940.00元/克</td><td>977.99元/克</td><td class="green">+4.04%</td></tr>
+          <tr><td>黄金T+D</td><td>920.99元/克</td><td>977.99元/克</td><td class="green">+6.19%</td></tr>
+          <tr><td>上海银Ag(T+D)</td><td>15.269元/克</td><td>17.166元/克</td><td class="green">+12.42%</td></tr>
         </tbody>
       </table>
     </div>
     <div class="alert alert-red">
-      <strong>历史性波动！</strong>国际金价连续第10个交易日下跌，创下近43年最差表现。3月23日盘中一度跌破$4,100（暴跌超8%）。国内金价大幅反弹但仍低于1,000元/克。中金公司研报："勿高估全球央行购金的动力"。
+      <strong>43年最差周表现！</strong>国际金价连续第10个交易日下跌，单周跌幅超10%。3月23日盘中一度跌破$4,100（暴跌超8%），随后深V反弹。国内金价强劲反弹（Au99.99 +6.51%），但品牌足金饰品仍报1,375元/克，与原料价形成巨大价差。
     </div>
 
     <h3>能源化工（3月23日）</h3>
@@ -386,20 +285,6 @@
           <tr><td>燃油主力FU</td><td>3,284元/吨</td><td class="red">-10.15%</td></tr>
           <tr><td>LPG主力PG</td><td>4,793元/吨</td><td class="red">-7.25%</td></tr>
           <tr><td>PTA主力</td><td>4,972元/吨</td><td class="red">-8.74%</td></tr>
-          <tr><td>甲醇主力MA</td><td>2,578元/吨</td><td class="red">-7.10%</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>基本金属（3月23日）</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>品种</th><th>收盘价</th><th>日涨跌幅</th></tr></thead>
-        <tbody>
-          <tr><td>沪铜主力</td><td>77,650元/吨</td><td class="red">-2.77%</td></tr>
-          <tr><td>沪铝主力</td><td>23,555元/吨</td><td class="red">-1.94%</td></tr>
-          <tr><td>沪锌主力</td><td>22,800元/吨</td><td class="red">-0.59%</td></tr>
-          <tr><td>沪镍主力</td><td>124,990元/吨</td><td class="red">-1.24%</td></tr>
         </tbody>
       </table>
     </div>
@@ -414,96 +299,62 @@
       <table>
         <thead><tr><th>期限</th><th>利率（%）</th><th>较前日变化（BP）</th><th>趋势</th></tr></thead>
         <tbody>
-          <tr><td>隔夜（O/N）</td><td>1.318</td><td>+0.1</td><td>稳定</td></tr>
+          <tr><td>隔夜</td><td>1.318</td><td>+0.1</td><td>稳定</td></tr>
           <tr><td>1周</td><td>1.417</td><td class="green">-0.5</td><td>小幅下行</td></tr>
           <tr><td>2周</td><td>1.512</td><td class="green">-1.2</td><td>小幅下行</td></tr>
           <tr><td>1个月</td><td>1.504</td><td class="green">-0.6</td><td>小幅下行</td></tr>
           <tr><td>3个月</td><td>1.516</td><td>-0.2</td><td>稳定</td></tr>
-          <tr><td>6个月</td><td>1.527</td><td>-0.2</td><td>稳定</td></tr>
           <tr><td>1年</td><td>1.547</td><td class="green">-0.2</td><td>小幅下行</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3>国债收益率曲线（3月23日）</h3>
+    <h3>国债收益率曲线（3月24日）</h3>
     <div class="table-wrap">
       <table>
         <thead><tr><th>期限</th><th>收益率（%）</th><th>较前日变化（BP）</th></tr></thead>
         <tbody>
-          <tr><td>1年</td><td>1.2568</td><td class="green">-1.0</td></tr>
-          <tr><td>2年</td><td>1.3163</td><td class="green">-1.0</td></tr>
-          <tr><td>3年</td><td>1.3563</td><td class="green">-1.0</td></tr>
-          <tr><td>5年</td><td>1.5720</td><td class="green">-0.8</td></tr>
-          <tr><td>10年</td><td>1.7628</td><td class="green">-0.7</td></tr>
-          <tr><td>20年</td><td>2.1673</td><td class="green">-0.5</td></tr>
-          <tr><td>30年</td><td>2.3005</td><td class="green">-0.4</td></tr>
-          <tr><td>50年</td><td>2.5503</td><td class="green">-0.4</td></tr>
+          <tr><td>1年</td><td>1.2618</td><td class="green">-0.5</td></tr>
+          <tr><td>2年</td><td>1.3112</td><td class="green">-0.5</td></tr>
+          <tr><td>5年</td><td>1.5767</td><td class="green">-0.5</td></tr>
+          <tr><td>10年</td><td>1.8272</td><td class="red">+0.6</td></tr>
+          <tr><td>30年</td><td>2.3005</td><td>持平</td></tr>
+          <tr><td>50年</td><td>2.5600</td><td>+0.1</td></tr>
         </tbody>
       </table>
     </div>
     <div class="note">
-      Shibor利率整体小幅下行，央行3月24日开展175亿元7天逆回购（利率1.40%持平）。国债收益率全线下行，避险资金涌入债市，10年期国债降至1.76%附近。
+      Shibor利率整体小幅下行，央行3月24日开展175亿元7天逆回购（利率1.40%持平）。国债收益率短端下行、长端微升，10年期升至1.83%。避险与博弈反弹资金交织，债市多空分歧加大。
     </div>
   </div>
 
   <!-- 资金流向 -->
   <div class="section">
     <h2>五、资金流向</h2>
-
-    <h3>北向资金（沪深港通）</h3>
     <div class="table-wrap">
       <table>
         <thead><tr><th>日期</th><th>沪股通（亿）</th><th>深股通（亿）</th><th>北向合计（亿）</th></tr></thead>
         <tbody>
+          <tr><td class="bold">3月24日</td><td class="green">134.28</td><td class="green">155.00</td><td class="green bold">289.29</td></tr>
           <tr><td>3月23日</td><td class="green">191.58</td><td class="green">160.76</td><td class="green bold">352.34</td></tr>
-          <tr><td>3月20日</td><td class="green">186.25</td><td class="green">152.84</td><td class="green bold">339.09</td></tr>
-          <tr><td>3月19日</td><td class="green">144.45</td><td class="green">130.19</td><td class="green bold">274.63</td></tr>
-          <tr><td>3月18日</td><td class="green">143.39</td><td class="green">120.27</td><td class="green bold">263.66</td></tr>
+          <tr><td>3月20日</td><td class="green">186.25</td><td class="green">152.84</td><td class="green">339.09</td></tr>
+          <tr><td>3月19日</td><td class="green">144.45</td><td class="green">130.19</td><td class="green">274.63</td></tr>
+          <tr><td>3月18日</td><td class="green">143.39</td><td class="green">120.27</td><td class="green">263.66</td></tr>
         </tbody>
       </table>
     </div>
     <div class="note">
-      <strong>北向资金逆市大幅净流入352.34亿元，连续4日大幅加仓！</strong>在A股暴跌之际，外资加速流入，显示海外长线资金对中国资产估值优势持乐观态度。
-    </div>
-
-    <h3>融资融券</h3>
-    <p style="font-size:13.5px; color: var(--text-secondary);">
-      两市融资余额减少113.99亿元，降至25,942亿元。融资盘在暴跌中被动平仓，但整体杠杆水平仍处高位。
-    </p>
-  </div>
-
-  <!-- 技术面 -->
-  <div class="section">
-    <h2>六、技术面分析</h2>
-    <h3>上证指数关键位</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>类型</th><th>关键位</th><th>说明</th></tr></thead>
-        <tbody>
-          <tr><td><span class="tag tag-green">支撑</span></td><td>3,795</td><td>周一盘中低点</td></tr>
-          <tr><td><span class="tag tag-green">支撑</span></td><td>3,750</td><td>心理关口</td></tr>
-          <tr><td><span class="tag tag-green">支撑</span></td><td>3,700</td><td>强支撑</td></tr>
-          <tr><td><span class="tag tag-red">压力</span></td><td>3,900</td><td>前平台</td></tr>
-          <tr><td><span class="tag tag-red">压力</span></td><td>3,960</td><td>60日均线</td></tr>
-          <tr><td><span class="tag tag-red">压力</span></td><td>4,000</td><td>整数关口</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="note">
-      MACD死叉扩大，KDJ超卖区域，RSI跌至25以下极端超卖。周一放量至10,862亿元，恐慌性抛售特征明显。短期技术面严重超卖，存在反弹需求，但反弹高度取决于美伊局势。
+      <strong>北向资金连续5日大幅净流入，5日合计超1,518亿元！</strong>今日净流入289.29亿元，虽较前日（352亿）有所减少，但仍保持大幅净买入。海外长线资金对中国资产估值优势坚定看好。
     </div>
   </div>
 
   <!-- 投资建议 -->
   <div class="section">
-    <h2>七、保守型投资者配置建议</h2>
+    <h2>六、保守型投资者配置建议</h2>
 
     <div class="alert alert-orange">
-      <strong>当前风险评估：偏高</strong><br>
-      地缘政治风险 <span class="tag tag-red">极高</span>
-      市场波动风险 <span class="tag tag-red">高</span>
-      流动性风险 <span class="tag tag-green">中低</span>
-      估值风险 <span class="tag tag-green">低</span>
+      <strong>当前风险评估：偏高</strong>（地缘政治风险极高、市场波动风险高）<br>
+      但估值风险已降至低位，北向资金信号积极
     </div>
 
     <h3>建议资产配置</h3>
@@ -513,34 +364,33 @@
     </div>
     <div class="alloc-row">
       <div class="alloc-bar" style="width:80px; background:#10b981;">20-30%</div>
-      <div><strong>国债/利率债</strong> — 避险属性凸显，收益率下行趋势明确</div>
+      <div><strong>国债/利率债</strong> — 收益率低位，但避险价值仍在</div>
     </div>
     <div class="alloc-row">
-      <div class="alloc-bar" style="width:45px; background:#f59e0b;">10-15%</div>
-      <div><strong>A股蓝筹ETF</strong> — 分批定投，北向资金逆市流入信号积极</div>
+      <div class="alloc-bar" style="width:50px; background:#f59e0b;">10-15%</div>
+      <div><strong>A股蓝筹ETF</strong> — 分批定投，5日北向流入1,518亿信号积极</div>
     </div>
     <div class="alloc-row">
       <div class="alloc-bar" style="width:30px; background:#ef4444;">5-10%</div>
-      <div><strong>黄金</strong> — 连跌10日后存在反弹需求，但趋势不明，谨慎参与</div>
+      <div><strong>黄金</strong> — 连跌10日后技术性反弹，但43年最差周，谨慎参与</div>
     </div>
 
     <h3 style="margin-top:16px;">操作原则</h3>
     <ol style="padding-left:18px; font-size:13.5px; line-height:2;">
-      <li><strong>不追涨杀跌</strong>：今日高开后切忌追涨，市场对美伊消息仍在消化</li>
+      <li><strong>不追涨</strong>：缩量反弹，追涨风险较高，关注能否放量站稳3,900点</li>
       <li><strong>分批建仓</strong>：以沪深300或中证500 ETF分批定投方式参与</li>
       <li><strong>债券打底</strong>：国债基金作为组合稳定器，当前收益确定性高</li>
-      <li><strong>规避高波动品种</strong>：原油期货、贵金属期货波动率极高，保守型回避</li>
-      <li><strong>关注北向资金</strong>：连续4日大幅流入（合计1,229亿），关注外资重仓品种</li>
-      <li><strong>设好止损</strong>：若上证跌破3,700点，建议进一步降低权益仓位</li>
+      <li><strong>规避高波动品种</strong>：原油期货、贵金属期货波动率极高</li>
+      <li><strong>关注北向资金</strong>：连续5日大幅净流入1,518亿，极为积极的信号</li>
+      <li><strong>设好止损</strong>：若上证再度跌破3,800点，建议进一步降低权益仓位</li>
     </ol>
   </div>
 
-  <!-- Disclaimer -->
   <div class="section" style="background: #f8fafc;">
     <div class="footer" style="padding:0; text-align:left;">
       <p><strong>免责声明：</strong>本报告基于公开数据和AI分析生成，仅供参考，不构成任何投资建议。市场有风险，投资需谨慎。</p>
       <p style="margin-top:6px;">数据来源：Tushare金融数据接口、东方财富、新浪财经、新华社等公开渠道。</p>
-      <p style="margin-top:10px; color:var(--text-secondary);">报告生成时间：2026年3月24日 14:30（盘中更新） | 更新频率：每个交易日</p>
+      <p style="margin-top:10px; color:var(--text-secondary);">报告生成时间：2026年3月24日 收盘 | 更新频率：每个交易日</p>
     </div>
   </div>
 
